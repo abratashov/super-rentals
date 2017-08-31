@@ -1,4 +1,3 @@
-{{yield}}
 <article class="listing">
   <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
     <img src="{{rental.image}}" alt="">
@@ -18,4 +17,5 @@
   <div class="detail bedrooms">
     <span>Number of bedrooms:</span> {{rental.bedrooms}}
   </div>
+  {{location-map location=rental.city}}
 </article>
